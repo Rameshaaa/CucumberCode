@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 54.387 s <<< FAILURE! - in TestSuite
+E2EProject.TestingFramework.AsssertValidation.basepageNavigation  Time elapsed: 0.105 s  <<< FAILURE!
+java.lang.AssertionError: expected [Feature Courses] but found [FEATURED COURSES]
+	at E2EProject.TestingFramework.AsssertValidation.basepageNavigation(AsssertValidation.java:38)
+
+E2EProject.TestingFramework.HomePage.basepageNavigation[ramm@yah.com, 987654321, 2nd data entered](2)  Time elapsed: 5.359 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Login')]"}
+  (Session info: headless chrome=85.0.4183.121)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'LTIN237839', ip: '192.168.43.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}), userDataDir=C:\Users\561877\AppData\Local\Temp\scoped_dir26044_623668676}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62535}, acceptInsecureCerts=false, browserVersion=85.0.4183.121, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: da00a85d65294a4d455d01862ea1e82f
+*** Element info: {Using=xpath, value=//span[contains(text(),'Login')]}
+	at E2EProject.TestingFramework.HomePage.basepageNavigation(HomePage.java:41)
+

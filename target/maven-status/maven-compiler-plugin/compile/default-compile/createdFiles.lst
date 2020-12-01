@@ -1,0 +1,4 @@
+E2EProject\TestingFramework\App.class
+resources\Base.class
+pageObjects\pageObjectsRepo.class
+resources\ExtentReporterNG.class

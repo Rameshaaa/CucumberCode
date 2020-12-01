@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="E2EProject.TestingFramework.Listeners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="E2EProject.TestingFramework.AsssertValidation2">
+        <methods>
+          <include name="BrowserOpening"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- E2EProject.TestingFramework.AsssertValidation2 -->
+      <class name="E2EProject.TestingFramework.HomePage">
+        <methods>
+          <include name="BrowserOpening"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- E2EProject.TestingFramework.HomePage -->
+      <class name="E2EProject.TestingFramework.AsssertValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="BrowserOpening"/>
+          <include name="basepageNavigation"/>
+        </methods>
+      </class> <!-- E2EProject.TestingFramework.AsssertValidation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Homepage(failed)">
+    <classes>
+      <class name="E2EProject.TestingFramework.AsssertValidation2">
+        <methods>
+          <include name="BrowserOpening"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- E2EProject.TestingFramework.AsssertValidation2 -->
+      <class name="E2EProject.TestingFramework.HomePage">
+        <methods>
+          <include name="basepageNavigation" invocation-numbers="0 1"/>
+          <include name="BrowserOpening"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- E2EProject.TestingFramework.HomePage -->
+      <class name="E2EProject.TestingFramework.AsssertValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="BrowserOpening"/>
+        </methods>
+      </class> <!-- E2EProject.TestingFramework.AsssertValidation -->
+    </classes>
+  </test> <!-- Homepage(failed) -->
+</suite> <!-- Failed suite [Suite] -->
