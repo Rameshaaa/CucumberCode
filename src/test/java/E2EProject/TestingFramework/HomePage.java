@@ -26,6 +26,7 @@ public class HomePage extends Base {
 		//log.info("Driver is initiated");
 		driver.get(prop.getProperty("url"));
 		//log.info("URL is launched");
+		System.out.println("added at 29")
 	}
 	
 	@Test(dataProvider="getData")
